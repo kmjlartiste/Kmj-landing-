@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kmj l'artiste - Landing Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.65);
+            z-index: 0;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.3em;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+        p.tagline {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 2em;
+            line-height: 1.4;
+        }
+        .btn-listen {
+            background-color: #ff4a4a;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 40px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 6px 15px rgba(255, 74, 74, 0.6);
+            transition: background-color 0.3s ease;
+        }
+        .btn-listen:hover {
+            background-color: #e63939;
+        }
+        .socials {
+            margin-top: 3em;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .socials a {
+            color: white;
+            font-size: 1.8rem;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        .socials a:hover {
+            color: #ff4a4a;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Kmj l'artiste</h1>
+        <p class="tagline">Entre émotions, vérité et son brut. Bienvenue dans mon univers.</p>
+        <a href="https://open.spotify.com/artist/placeholder" target="_blank" class="btn-listen">Écouter maintenant</a>
+        <div class="socials">
+            <a href="https://instagram.com/placeholder" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/placeholder" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://tiktok.com/@placeholder" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
